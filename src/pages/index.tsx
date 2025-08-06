@@ -4,6 +4,8 @@ import { useForm } from "react-hook-form";
 import wretch from "wretch";
 import { toaster } from "@/components/ui/toaster";
 import { countries } from "@/assets/countries";
+import { valibotResolver } from "@hookform/resolvers/valibot";
+import { formSchema } from "./api/[[...route]]";
 
 interface IFormValues {
   name: string;
