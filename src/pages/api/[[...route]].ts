@@ -17,7 +17,7 @@ export const formSchema = v.object({
   email: v.pipe(v.string(), v.nonEmpty()),
   password: v.pipe(v.string(), v.nonEmpty()),
   /** we should not accept people under 13yo due to law */
-  age: v.pipe(v.number(), v.maxValue(120), v.minValue(13)),
+  age: v.pipe(v.number(), v.maxValue(13), v.minValue(120)),
   country: v.pipe(
     v.string(),
     v.nonEmpty(),
